@@ -1,5 +1,6 @@
 import React from "react";
 import "./BannerItem.css";
+import { Link } from "react-router-dom";
 
 const BannerItem = ({ slide }) => {
   const { image, id, prev, next } = slide;
@@ -20,8 +21,12 @@ const BannerItem = ({ slide }) => {
         </p>
       </div>
       <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24 top-3/4">
-        <button className="btn btn-primary mr-5">New Product</button>
-        <button className="btn btn-outline btn-primary">Old Product</button>
+        <Link to="/new_products" className="btn btn-primary mr-5">
+          New Product
+        </Link>
+        <Link to="/old_products" className="btn btn-outline btn-primary">
+          Old Product
+        </Link>
       </div>
       <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
         <a href={`#slide${prev}`} className="btn btn-circle mr-5">

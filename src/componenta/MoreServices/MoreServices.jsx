@@ -37,10 +37,12 @@ const MoreServices = () => {
   }
   return (
     <>
-      <div className="text-center mb-4">
+      <div className="text-center mt-6">
         <h2 className="text-3xl font-serif">Our All Service Area</h2>
-        <p className="text-xl font-serif text-orange-600">
-          We Services Have to Provide {services?.length} types of services
+        <p className="text-xl font-serif ">
+          We Services Have to <span className="text-green-500">P</span>rovid
+          <span className="text-red-500">E</span>{" "}
+          <span className="text-2xl">{services?.length}</span> types of services
         </p>
       </div>
 
@@ -49,6 +51,7 @@ const MoreServices = () => {
           <option disabled selected>
             Select Your Service
           </option>
+          <option value="">All Services</option>
           {services?.map((v, index) => (
             <option key={index}>{v?.title}</option>
           ))}

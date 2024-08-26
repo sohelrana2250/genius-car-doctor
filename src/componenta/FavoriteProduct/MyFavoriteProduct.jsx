@@ -67,15 +67,16 @@ const MyFavoriteProduct = () => {
     <>
       <section className="bg-white   dark:bg-gray-900 md:py-6">
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
-          <h2 className="text-xl font-serif text-center text-gray-900 dark:text-white sm:text-2xl m">
+          <h2 className="text-xl font-serif text-center text-gray-900 dark:text-white sm:text-2xl ">
             My Favorite List
           </h2>
+          <br />
           <div className="grid   lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-2">
             {!isLoading &&
               myfavorite?.data?.map((product, index) => (
                 <div
                   key={index}
-                  className="relative rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-lg dark:border-gray-700 dark:bg-gray-800 p-4 transition-shadow duration-300"
+                  className="relative rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-lg dark:border-gray-700 dark:bg-gray-800  transition-shadow duration-300"
                 >
                   <div className="avatar">
                     <div className="w-full rounded">
@@ -84,18 +85,18 @@ const MyFavoriteProduct = () => {
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                      {product?.name}
+                      Product Name: {product?.name}
                     </h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      {product?.companyName}
+                      Company Name: {product?.companyName}
                     </p>
                     <p className="mt-2 text-xl font-bold text-gray-900 dark:text-white">
-                      {product?.price} TK
+                      Price: {product?.price} TK
                     </p>
                     <div className="mt-4 flex justify-between">
                       <button
                         onClick={() => handleAddToCart(product)}
-                        className="btn btn-primary btn-outline btn-sm"
+                        className="btn  btn-outline btn-sm"
                       >
                         Add to Cart
                       </button>

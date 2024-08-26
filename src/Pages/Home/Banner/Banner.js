@@ -49,7 +49,14 @@ const bannerData = [
 ];
 
 const Banner = () => {
-  const images = [img1, img2, img3, img4, img5, img6];
+  const images = [
+    "https://engineerine.com/wp-content/uploads/2023/01/blog-automotiveparts-eng-1300x980.jpg__1200x690_q85_crop_subsampling-2-1025x589.jpg",
+    "https://media.istockphoto.com/id/1034249292/photo/set-of-car-parts-isolated-on-white-background-3d.jpg?s=612x612&w=0&k=20&c=BwXl3LzQau4v40nl9INYToE0mC1SYDA4gBkylspbYis=",
+    "https://st2.depositphotos.com/1001335/5886/i/450/depositphotos_58860649-stock-photo-auto-parts-in-the-cardbox.jpg",
+    "https://img.freepik.com/premium-photo/new-auto-spare-parts-white-background_93675-89061.jpg",
+    "https://t3.ftcdn.net/jpg/07/25/06/10/360_F_725061070_NvRsvD2AhlTIFAYSvJlPmbeHJCFDXUaK.jpg",
+    "https://cdn.vectorstock.com/i/500p/20/33/bottle-engine-oil-on-white-background-vector-21192033.jpg",
+  ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Automatically change image every 3 seconds
