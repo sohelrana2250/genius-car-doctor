@@ -135,7 +135,7 @@ const AddToCardOldProject = () => {
     <>
       <section className="bg-white py-8 antialiased  md:py-16">
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
-          <h2 className="text-xl font-serif text-gray-900 dark:text-white sm:text-2xl">
+          <h2 className="text-xl font-serif text-gray-900 sm:text-2xl">
             <span className="text-red-500"> O</span>ld{" "}
             <span className="text-green-500">P</span>roduct{" "}
             <span className="text-red-500">S</span>hopping{" "}

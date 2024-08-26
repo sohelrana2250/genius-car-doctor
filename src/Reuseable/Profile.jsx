@@ -142,7 +142,7 @@ const Profile = () => {
           </div>
 
           {deviceInfo && (
-            <div className=" grid lg:grid-cols-2 sm:grid-cols-1 bg-white border border-gray-200 shadow sm:p-8 dark:bg-blue-900 dark:border-gray-700">
+            <div className=" grid lg:grid-cols-2 sm:grid-cols-1 bg-white border border-gray-200 shadow sm:p-8 dark:bg-blue-300 dark:border-gray-700">
               <div className="p-4">
                 <div className="flex items-center justify-between mb-4">
                   <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">
