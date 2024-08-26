@@ -133,7 +133,7 @@ const AddToCardOldProject = () => {
 
   return (
     <>
-      <section className="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+      <section className="bg-white py-8 antialiased  md:py-16">
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
           <h2 className="text-xl font-serif text-gray-900 dark:text-white sm:text-2xl">
             <span className="text-red-500"> O</span>ld{" "}
