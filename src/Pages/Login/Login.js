@@ -124,12 +124,55 @@ const Login = () => {
               <FcGoogle className="text-xl mr-3" /> Sing In With Google
             </button>
           </div>
-          <p className="text-center mt-3">
+          <p className="text-center mt-3  underline">
             New to Genius Car{" "}
             <Link className="text-orange-600 font-bold" to="/signup">
               Sign Up
             </Link>{" "}
           </p>
+          <p className="text-center mt-3 underline">
+            Generate New Password
+            <Link className="text-orange-600 font-bold" to="/reset_password">
+              {" "}
+              Forgot Password
+            </Link>
+          </p>
+          {/* The button to open modal */}
+          <div className="m-5">
+            <label
+              htmlFor="my_modal_6"
+              className="text-xl btn-outline font-serif btn w-full "
+            >
+              Account Credentials
+            </label>
+          </div>
+        </div>
+      </div>
+      <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+      <div className="modal" role="dialog">
+        <div className="modal-box">
+          <div>
+            <h1 className="text-xl font-bold">User Account</h1>
+            <p>
+              <span className="font-bold">Email:</span>
+              salmansalman19347@gmail.com
+            </p>
+            <p>
+              <span className="font-bold">Password:</span>123456
+            </p>
+            <h1 className="text-xl font-bold">Admin Account</h1>
+            <p>
+              <span className="font-bold">Email:</span>amsr215019@gmail.com
+            </p>
+            <p>
+              <span className="font-bold">Password:</span>123456
+            </p>
+          </div>
+          <div className="modal-action">
+            <label htmlFor="my_modal_6" className="btn">
+              Close!
+            </label>
+          </div>
         </div>
       </div>
     </div>

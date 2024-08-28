@@ -92,7 +92,7 @@ const DashboardLayout = () => {
     {
       icon: <MdLockReset className="text-xl" />,
       name: "Reset Password",
-      path: "/new_products/reset_password",
+      path: "/reset_password",
     },
   ];
 

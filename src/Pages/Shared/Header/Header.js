@@ -10,6 +10,7 @@ import { MdLockReset } from "react-icons/md";
 import { TbArrowRoundaboutRight } from "react-icons/tb";
 import { MdMiscellaneousServices } from "react-icons/md";
 import { MdAutoDelete } from "react-icons/md";
+import useAdmin from "../../../hooks/useAdmin";
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
 
@@ -27,24 +28,24 @@ const Header = () => {
       <li className="font-serif">
         <Link to="/">Home</Link>
       </li>
+      <li className="font-serif">
+        <Link to="/more-services">Services</Link>
+      </li>
+      <li className="font-serif">
+        <Link to="/new_products">New Products</Link>
+      </li>
+      <li className="font-serif">
+        <Link to="/old_products">Sell Products</Link>
+      </li>
+      <li className="font-serif">
+        <Link to="/about">About</Link>
+      </li>
       {user?.email && user?.emailVerified ? (
         <>
-          <li className="font-serif">
-            <Link to="/more-services">Services</Link>
-          </li>
           <li className="font-serif">
             <Link to="/orders">Orders</Link>
           </li>
 
-          <li className="font-serif">
-            <Link to="/new_products">New Products</Link>
-          </li>
-          <li className="font-serif">
-            <Link to="/old_products">Sell Products</Link>
-          </li>
-          <li className="font-serif">
-            <Link to="/about">About</Link>
-          </li>
           <li className="font-serif">
             <Link to="/dashboard">Dashboard</Link>
           </li>
@@ -161,7 +162,7 @@ const Header = () => {
             </li>
             {/* /new_products/reset_password */}
             <li>
-              <Link to="/new_products/reset_password">
+              <Link to="/reset_password">
                 <div className="flex m-1">
                   <MdLockReset className="text-xl mr-2" />
                   <span>Forget Password</span>

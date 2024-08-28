@@ -83,7 +83,7 @@ const MyFavoriteProduct = () => {
                       <img src={product?.image} />
                     </div>
                   </div>
-                  <div className="p-4">
+                  <div className="Q 1p-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                       Product Name: {product?.name}
                     </h3>

@@ -3,9 +3,10 @@ import ErrorPage from "../Pages/Shared/ErrorPage/ErrorPage";
 import { AuthContext } from "../contexts/AuthProvider/AuthProvider";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-
+import { useNavigate } from "react-router-dom";
 const ResetPassword = () => {
-  const { user, ResetPassword, logOut } = useContext(AuthContext);
+  const { ResetPassword } = useContext(AuthContext);
+  const navigate = useNavigate();
   const {
     handleSubmit,
     register,
@@ -24,13 +25,7 @@ const ResetPassword = () => {
           showConfirmButton: false,
           timer: 1500,
         });
-        logOut()
-          .then(() => {
-            localStorage.setItem("token", null);
-          })
-          .catch((error) => {
-            setError(error.message);
-          });
+        navigate("/login");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -81,9 +76,7 @@ const ResetPassword = () => {
                       id="email"
                       type="email"
                       {...register("email")}
-                      defaultValue={user?.email}
                       placeholder="Enter Email Address..."
-                      readOnly
                     />
                     {errors?.email && (
                       <p className="text-red-500 text-xs italic">
@@ -103,9 +96,7 @@ const ResetPassword = () => {
                       className="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                       id="name"
                       type="text"
-                      defaultValue={user?.displayName}
                       placeholder=""
-                      readOnly
                     />
                   </div>
 
