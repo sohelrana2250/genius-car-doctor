@@ -20,7 +20,7 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
             <div className="img-box">
               <img
-                src="https://pagedone.io/asset/uploads/1702034769.png"
+                src="https://images.pexels.com/photos/3862618/pexels-photo-3862618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="About Us tailwind page"
                 className="max-lg:mx-auto"
               />
@@ -50,7 +50,7 @@ const AboutPage = () => {
             <div className="lg:pr-24 flex items-center">
               <div className="data w-full">
                 <img
-                  src="https://pagedone.io/asset/uploads/1702034785.png"
+                  src="https://images.pexels.com/photos/13065697/pexels-photo-13065697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="About Us tailwind page"
                   className="block lg:hidden mb-9 mx-auto"
                 />
@@ -69,7 +69,7 @@ const AboutPage = () => {
             </div>
             <div className="img-box ">
               <img
-                src="https://pagedone.io/asset/uploads/1702034785.png"
+                src="https://images.pexels.com/photos/21407448/pexels-photo-21407448/free-photo-of-screen-in-a-car.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="About Us tailwind page"
                 className="hidden lg:block "
               />
