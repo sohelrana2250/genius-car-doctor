@@ -20,15 +20,19 @@ const Services = () => {
   return (
     <div>
       <div className="text-center mb-4">
-        <p className="text-2xl font-serif text-orange-600">Services</p>
-        <h2 className="text-5xl font-semibold">Our Service Area</h2>
-        <p className="text-xl m-3">
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.{" "}
+        <h1 className="text-5xl font-serif text-orange-600">Our Services</h1>
+        <h2 className="text-4xl font-semibold">
+          Best Car Service Center In Dhaka, Bangladesh
+        </h2>
+        <p className="text-x2 m-3">
+          Car Doctor- The best car service center in Dhaka providing top quality
+          auto repair services for all vehicle types. If you are looking for the
+          best car repair services, Then we are the best leading multi-brand car
+          workshop for you.{" "}
         </p>
       </div>
       <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {services?.slice(0, 6)?.map((service) => (
+        {services?.slice(0, 3)?.map((service) => (
           <ServiceCard key={service._id} service={service}></ServiceCard>
         ))}
       </div>

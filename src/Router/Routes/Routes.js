@@ -14,12 +14,14 @@ import SignUp from "../../Pages/SignUp/SignUp";
 import ChnagePasswod from "../../Reuseable/ChnagePasswod";
 import Profile from "../../Reuseable/Profile";
 import ResetPassword from "../../Reuseable/ResetPassword";
+import HavingTrouble from "../../componenta/AI/HavingTrouble";
 import AddToCard from "../../componenta/AddToCard/AddToCard";
 import AddToCardOldProductList from "../../componenta/Dashboard/AddToCardOldProductList";
 import AddToProduct from "../../componenta/Dashboard/AddToProduct";
 import AllAddToCard from "../../componenta/Dashboard/AllAddToCard";
 import AllCategorie from "../../componenta/Dashboard/AllCategorie";
 import AllFavoriteProduct from "../../componenta/Dashboard/AllFavoriteProduct";
+import AllOldProduct from "../../componenta/Dashboard/AllOldProduct";
 import AllOldProductPaymentList from "../../componenta/Dashboard/AllOldProductPaymentList";
 import AllProductList from "../../componenta/Dashboard/AllProductList";
 import AllUsers from "../../componenta/Dashboard/AllUsers";
@@ -44,6 +46,7 @@ import OldProductComponents from "../../componenta/OldProductDashboard/ProductPa
 import OldVehicleCar from "../../componenta/OldProductDashboard/ProductPage/OldVehicleCar";
 import PaymentFailed from "../../componenta/Payment/PaymentFailed";
 import PaymentSuccess from "../../componenta/Payment/PaymentSuccess";
+import PaymentLaser from "../../componenta/PaymentLaser/PaymentLaser";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -112,6 +115,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <MoreDetails />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/having_trouble",
+        element: (
+          <PrivateRoute>
+            <HavingTrouble />
           </PrivateRoute>
         ),
       },
@@ -195,6 +206,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <ChnagePasswod />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/new_products/my_payment_laser",
+        element: (
+          <PrivateRoute>
+            <PaymentLaser />
           </PrivateRoute>
         ),
       },
@@ -313,6 +332,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <AllProductList />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/all_selling_product",
+        element: (
+          <PrivateRoute>
+            <AllOldProduct />
           </PrivateRoute>
         ),
       },

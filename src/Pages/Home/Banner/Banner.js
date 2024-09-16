@@ -62,8 +62,7 @@ const bannerData = [
     next: 3,
   },
   {
-    image:
-      "https://images.pexels.com/photos/7144226/pexels-photo-7144226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://etimg.etb2bimg.com/photo/86529545.cms",
     prev: 2,
     id: 3,
     next: 4,
@@ -206,7 +205,7 @@ const Banner = () => {
   };
   return (
     <>
-      <div className="relative">
+      {/* <div className="relative">
         <img
           src={images[currentImageIndex]}
           alt={`Slide ${currentImageIndex + 1}`}
@@ -221,7 +220,7 @@ const Banner = () => {
             <FcNext className="text-xl text-white" />
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="carousel w-full ">
         {bannerData.map((slide) => (
           <BannerItem key={slide.id} slide={slide}></BannerItem>

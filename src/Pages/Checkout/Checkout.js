@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import AllDistrict from "../../utils/AllDistrict";
 import toast from "react-hot-toast";
@@ -9,6 +9,7 @@ const Checkout = () => {
   const { _id, title, price } = data;
 
   const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handlePlaceOrder = (event) => {
     event.preventDefault();
@@ -50,8 +51,11 @@ const Checkout = () => {
       })
       .then((data) => {
         form.reset();
-        console.log(data);
-        toast.success(data?.message);
+
+        if (data) {
+          toast.success(data?.message);
+          navigate("/orders");
+        }
       })
       .catch((er) => toast.error(er?.message));
   };

@@ -55,7 +55,7 @@ const OldProductDashboard = () => {
                 </div>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/add_to_card/oldProduct"
                 className="btn  bg-black text-white mr-1"
@@ -65,7 +65,7 @@ const OldProductDashboard = () => {
                   <span>Add To Card</span>
                 </div>
               </Link>
-            </li>
+            </li> */}
 
             {allPotterySubCategorie?.map((categorie, index) => (
               <li key={index}>

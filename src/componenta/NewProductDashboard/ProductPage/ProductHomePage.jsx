@@ -63,13 +63,17 @@ const ProductHomePage = () => {
       <div className="flex items-center justify-center mb-8 m-3">
         <select
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="rounded-l-md text-center bg-blue-900 h-14 text-white"
+          className="rounded-l-md text-left font-bold bg-base-200 h-14 text-black "
         >
-          <option disabled={true}>All Product Name </option>
-          <option value="">All Product </option>
+          <option className="font-bold" disabled={true}>
+            All Product Name{" "}
+          </option>
+          <option className="font-bold" value="">
+            All Product{" "}
+          </option>
           {allPotterySubCategorie?.map((v) =>
             v.subCategorie?.map((v, key) => (
-              <option key={key} value={v.name}>
+              <option className="font-bold" key={key} value={v.name}>
                 {v.name}
               </option>
             ))
@@ -79,7 +83,7 @@ const ProductHomePage = () => {
           type="search"
           id="default-search"
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="block w-full p-4 pl-10 text-sm text-white border border-gray-300 rounded-r-lg  focus:ring-blue-500 focus:border-blue-500 bg-slate-900 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="block w-full p-4 pl-10 text-sm text-black border border-gray-300 rounded-r-lg  focus:ring-blue-500 focus:border-blue-500 bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="Search by  company name"
           required
         />

@@ -7,16 +7,17 @@ import { BiCategory } from "react-icons/bi";
 import { TbCategoryPlus } from "react-icons/tb";
 import { RiProductHuntLine } from "react-icons/ri";
 import { BsGraphUpArrow } from "react-icons/bs";
+import { FaSellsy } from "react-icons/fa";
 import {
   MdLockReset,
   MdOutlinePassword,
   MdOutlineShoppingCartCheckout,
 } from "react-icons/md";
 import { GiLoveMystery } from "react-icons/gi";
-import { FcReuse } from "react-icons/fc";
+
 import { FaAmazonPay } from "react-icons/fa";
 import { LiaCcAmazonPay } from "react-icons/lia";
-import { SiPaytm } from "react-icons/si";
+
 import useAdmin from "../hooks/useAdmin";
 const DashboardLayout = () => {
   const { pathname } = useLocation();
@@ -58,10 +59,15 @@ const DashboardLayout = () => {
       name: "All Favorite",
       path: "/dashboard/all_favorite_product",
     },
+    // {
+    //   icon: <FcReuse className="text-xl" />,
+    //   name: "Reuseable Product",
+    //   path: "/dashboard/all_old_product_list",
+    // },
     {
-      icon: <FcReuse className="text-xl" />,
-      name: "Reuseable Product",
-      path: "/dashboard/all_old_product_list",
+      icon: <FaSellsy className="text-xl" />,
+      name: "All Selling Product",
+      path: "/dashboard/all_selling_product",
     },
     {
       icon: <FaAmazonPay className="text-xl" />,
@@ -73,11 +79,11 @@ const DashboardLayout = () => {
       name: "New Product Pay",
       path: "/dashboard/new_product_paymentlist",
     },
-    {
-      icon: <SiPaytm className="text-xl" />,
-      name: "Old Product Pay",
-      path: "/dashboard/old_product_paymentlist",
-    },
+    // {
+    //   icon: <SiPaytm className="text-xl" />,
+    //   name: "Old Product Pay",
+    //   path: "/dashboard/old_product_paymentlist",
+    // },
     {
       icon: <BsGraphUpArrow className="text-xl" />,
       name: "Activity",

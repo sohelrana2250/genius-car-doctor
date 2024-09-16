@@ -4,7 +4,7 @@ import { allPotterySubCategorie } from "./ProductDashboard";
 import { Link, Outlet } from "react-router-dom";
 import Header from "../../Pages/Shared/Header/Header";
 import Footer from "../../Pages/Shared/Footer/Footer";
-
+import { FaAmazonPay } from "react-icons/fa";
 const NewProductDashboard = () => {
   return (
     <>
@@ -25,11 +25,23 @@ const NewProductDashboard = () => {
             <li>
               <Link
                 to="/new_products"
-                className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+                className="btn rounded-sm  bg-black text-white m-2"
               >
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-white  dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                  All Products
-                </span>
+                <div className="flex items-center text-white">
+                  <span> All Products</span>
+                </div>
+              </Link>
+            </li>
+            {/* payment laser */}
+            <li>
+              <Link
+                to="/new_products/my_payment_laser"
+                className="btn rounded-sm  bg-black text-white ml-1 mr-1"
+              >
+                <div className="flex items-center text-white">
+                  <FaAmazonPay className="text-xl mr-1" />
+                  <span> my payment laser</span>
+                </div>
               </Link>
             </li>
 

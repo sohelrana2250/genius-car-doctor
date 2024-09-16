@@ -5,7 +5,6 @@ import LoadingSpinner from "../../Pages/Shared/Loading/LoadingSpinner";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import DeleteAction from "../../FetchAction/DeleteAction";
 import { Link } from "react-router-dom";
-import UpdateCategorie from "../Modal/UpdateCategorie";
 
 const AllCategorie = () => {
   const {

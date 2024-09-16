@@ -248,7 +248,7 @@ const Dashboard = () => {
         </BarChart>
       </ResponsiveContainer>
 
-      <h1 className=" m-3 text-4xl font-serif text-center my-3 py-2 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg">
+      {/* <h1 className=" m-3 text-4xl font-serif text-center my-3 py-2 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg">
         Resuable Product Payments
       </h1>
       <ResponsiveContainer width="100%" height={500}>
@@ -261,7 +261,7 @@ const Dashboard = () => {
           <Bar dataKey="payableAmount" fill="#50dad8" />
           <Bar dataKey="name" fill="#9a13d4" />
         </BarChart>
-      </ResponsiveContainer>
+      </ResponsiveContainer> */}
     </>
   );
 };

@@ -1,12 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import toast from "react-hot-toast";
-import LoadingSpinner from "../../../Pages/Shared/Loading/LoadingSpinner";
-import ErrorPage from "../../../Pages/Shared/ErrorPage/ErrorPage";
-import PostAction from "../../../FetchAction/PostAction";
-import OldProductCard from "../../../Reuseable/OldProductCard";
+import LoadingSpinner from "../../Pages/Shared/Loading/LoadingSpinner";
+import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
+import OldProductCard from "../../Reuseable/OldProductCard";
 
-const AllOldProducts = () => {
+const AllOldProduct = () => {
   const {
     data: allOldProducts = [],
     isLoading,
@@ -24,6 +23,7 @@ const AllOldProducts = () => {
             },
           }
         );
+
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
@@ -43,17 +43,6 @@ const AllOldProducts = () => {
     return <ErrorPage />;
   }
 
-  const handelAddToCard = async (product) => {
-    if (product) {
-      PostAction(
-        `${process.env.REACT_APP_SERVER_URL}/api/v1/add_to_card_old_product`,
-        product
-      );
-    } else {
-      toast.error("Add To Card Error");
-    }
-  };
-
   return (
     <>
       {!isLoading && (
@@ -63,4 +52,4 @@ const AllOldProducts = () => {
   );
 };
 
-export default AllOldProducts;
+export default AllOldProduct;

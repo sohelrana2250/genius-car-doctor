@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import { Spin } from "antd";
 import ServiceCard from "../../Pages/Home/Services/ServiceCard";
+import { Link } from "react-router-dom";
 
 const MoreServices = () => {
   const url = "https://car-doctors-server-sigma.vercel.app/services";
@@ -46,7 +47,7 @@ const MoreServices = () => {
         </p>
       </div>
 
-      <div className=" flex justify-start m-3">
+      {/* <div className=" flex justify-start m-3">
         <select className="select select-info w-full max-w-xs">
           <option disabled selected>
             Select Your Service
@@ -56,6 +57,11 @@ const MoreServices = () => {
             <option key={index}>{v?.title}</option>
           ))}
         </select>
+      </div> */}
+      <div className="flex justify-end">
+        <Link to="/orders" className=" btn btn-outline  m-3">
+          Order History
+        </Link>
       </div>
 
       {!isLoading ? (

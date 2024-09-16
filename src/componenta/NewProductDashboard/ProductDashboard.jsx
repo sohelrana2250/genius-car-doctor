@@ -8,7 +8,113 @@ import HALOGEN from "../../assets/productIcon/6.png";
 export const allPotterySubCategorie = [
   {
     id: 1,
-    categorieName: "Brakes",
+    categorieName: "Bike Category",
+    subCategorie: [
+      {
+        path: 1,
+        name: "Helmet",
+        productIcon:
+          "https://img.drz.lazcdn.com/static/bd/p/fd0437c78620a365afaf5537268826f6.jpg_720x720q80.jpg",
+      },
+      {
+        path: 2,
+        name: "Bike Brakes",
+        productIcon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc4-3HiLAkNfIMpEMzgSTMpU33BKdQbcKKug&s",
+      },
+      {
+        path: 3,
+        name: "Bike Battery",
+        productIcon: "https://m.media-amazon.com/images/I/61TcymrF39S.jpg",
+      },
+      {
+        path: 4,
+        name: "Bike light",
+        productIcon:
+          "https://brightstartw.com/wp-content/uploads/DB-6-Small-LED-Motorcycle-Driving-Lights.jpg",
+      },
+      {
+        path: 5,
+        name: "Exhust pipe",
+        productIcon:
+          "https://d29c80i09kxy2a.cloudfront.net/custom/blog-post-photo/mobile/gallery/motorcycle-exhaust-pipe-60fe5f7e837af.jpg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    categorieName: "Pick Up",
+    subCategorie: [
+      {
+        path: 1,
+        name: " Engine",
+        productIcon:
+          "https://media.istockphoto.com/id/622426606/photo/diesel-engine-isolated-on-white.jpg?s=612x612&w=0&k=20&c=mp8XgoIYPd0kkUqV7aEOHkZFoptIKm7MiGozyBKZlUE=",
+      },
+      {
+        path: 2,
+        name: "Gearbox",
+        productIcon:
+          "https://i.ytimg.com/vi/ExWiuKz_RYc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWXaBIpyxLGTM6iaAZKPhfSQie8A",
+      },
+      {
+        path: 3,
+        name: "Shock abrobaer",
+        productIcon:
+          "https://image.made-in-china.com/2f0j00PkuWHrlhOeqT/Car-Shock-Absorber-56100eb32c-for-Nissan-Pick-up-Cab-King-Cab-Navara-Np300.jpg",
+      },
+      {
+        path: 4,
+        name: "Spark plug",
+        productIcon:
+          "https://m.media-amazon.com/images/I/71xP0pSfNkL._AC_UF1000,1000_QL80_.jpg",
+      },
+      {
+        path: 5,
+        name: "Engine fan",
+        productIcon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd8eOT1_9_C6iMby5IRtDQpb6XgpUpowpLww&s",
+      },
+    ],
+  },
+  {
+    id: 3,
+    categorieName: "Cng",
+    subCategorie: [
+      {
+        path: 1,
+        name: " Cng gas cylinder",
+        productIcon: "https://metro-shine.com/images/product/CNG1.jpg",
+      },
+      {
+        path: 2,
+        name: "Cng",
+        productIcon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8hOl6R4qrD3cUTXrsr-sIJo0yyn5pTMq4iA&s",
+      },
+      {
+        path: 3,
+        name: "Tyre",
+        productIcon:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQgiKguV85clFBL25pGgYuzu7jwPwqDdycIw&s",
+      },
+      {
+        path: 4,
+        name: "Glass",
+        productIcon:
+          "https://image.made-in-china.com/202f0j00cQjbzJZlEipo/CNG-4mm-10mm-Colored-Tinted-Glass-Clear-Float-Glass-Bronze-Brown-Blue-Grey-Gray-Green-Black-Float-Glass-Reflective-Glass-Building-Glass-Glass.webp",
+      },
+      {
+        path: 5,
+        name: "Front Mudgurd",
+        productIcon:
+          "https://5.imimg.com/data5/SELLER/Default/2023/9/340191368/IM/XC/AM/109382937/bajaj-auto-rikshaw-front-mudguard-500x500.jpeg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    categorieName: "Car Categories  Brakes",
     subCategorie: [
       { path: 1, name: "Brake Pad", productIcon: BrakePad },
       { path: 2, name: "Brake Shoe", productIcon: BrakeShoe },
@@ -16,7 +122,7 @@ export const allPotterySubCategorie = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     categorieName: "Buld",
     subCategorie: [
       { path: 1, name: "HID", productIcon: HID },
@@ -26,7 +132,7 @@ export const allPotterySubCategorie = [
   },
 
   {
-    id: 3,
+    id: 6,
     categorieName: "Tyre",
     subCategorie: [
       {
@@ -44,7 +150,7 @@ export const allPotterySubCategorie = [
     ],
   },
   {
-    id: 4,
+    id: 7,
     categorieName: "Electrical Parts",
     subCategorie: [
       {
@@ -68,7 +174,7 @@ export const allPotterySubCategorie = [
     ],
   },
   {
-    id: 5,
+    id: 8,
     categorieName: "Filter",
     subCategorie: [
       {
@@ -92,7 +198,7 @@ export const allPotterySubCategorie = [
     ],
   },
   {
-    id: 6,
+    id: 9,
     categorieName: "Car Care Items",
     subCategorie: [
       {
@@ -122,7 +228,7 @@ export const allPotterySubCategorie = [
     ],
   },
   {
-    id: 7,
+    id: 10,
     categorieName: "Wiper Blade",
     subCategorie: [
       {
@@ -152,7 +258,7 @@ export const allPotterySubCategorie = [
     ],
   },
   {
-    id: 8,
+    id: 11,
     categorieName: "Lubricant",
     subCategorie: [
       {
@@ -182,7 +288,7 @@ export const allPotterySubCategorie = [
     ],
   },
   {
-    id: 9,
+    id: 12,
     categorieName: "BODY PARTS",
     subCategorie: [
       {
